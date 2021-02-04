@@ -1,5 +1,39 @@
 body {
-  color: rgb(146, 50, 50);
-  background-color: rgb(116, 104, 148);
-  font-family: 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Slab", "Times New Roman", serif;
+  color: black;
+  background-color: #f1f0e9;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  max-width: 100%;
+}
+
+.logo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.logo > img {
+  width: 20rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
 }
