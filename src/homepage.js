@@ -3,9 +3,9 @@ function renderHomepage() {
   const mainContainer = document.querySelector("#content");
   const nav = defineElement("nav");
   const links = defineElement("div", "links");
-  const about = defineElement("p", "about", "About");
-  const menu = defineElement("p", "menu", "Menu");
-  const contact = defineElement("p", "contact", "Contact");
+  const about = defineElement("p", null, "About");
+  const menu = defineElement("p", null, "Menu");
+  const contact = defineElement("p", null, "Contact");
 
   links.append(about, menu, contact);
   nav.appendChild(links);

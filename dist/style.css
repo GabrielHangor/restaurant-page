@@ -53,6 +53,8 @@ nav {
   transform: scale(0.96);
 }
 
+
+/* homepage */
 main {
   grid-gap: 1rem;
   height: auto;
@@ -89,4 +91,33 @@ main {
 .picture > img {
   max-width: 90%;
   max-height: 90%;
+}
+
+/* menu */
+.menu {
+  width: 70%;
+  align-self: center;
+}
+
+.meal {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.meal-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meal-picture > img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.description {
+  text-align: center;
+  align-self: center;
+  font-size: 1.4rem;
 }
