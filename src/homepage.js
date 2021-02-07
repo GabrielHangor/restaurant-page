@@ -6,6 +6,7 @@ function renderHomepage() {
   const about = defineElement("p", null, "About");
   const menu = defineElement("p", null, "Menu");
   const contact = defineElement("p", null, "Contact");
+  about.classList.toggle('toggled');
 
   links.append(about, menu, contact);
   nav.appendChild(links);

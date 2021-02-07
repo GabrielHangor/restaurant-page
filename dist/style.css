@@ -16,6 +16,7 @@ body {
   height: 100%;
 }
 
+/* nav */
 nav {
   display: flex;
   justify-content: space-around;
@@ -34,7 +35,6 @@ nav {
   cursor: pointer;
   align-self: center;
   border: solid 2px #f1f0e9;
-  background: transparent;
   letter-spacing: 1px;
   text-transform: uppercase;
   transition: all 0.2s ease-in-out;
@@ -49,10 +49,14 @@ nav {
   color: #1f1f1f;
 }
 
+.toggled {
+  background-color: #ff715f;
+  color: #1f1f1f;
+}
+
 .links > p:active {
   transform: scale(0.96);
 }
-
 
 /* homepage */
 main {
@@ -63,6 +67,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 30% 70%;
+  animation: popup 1s;
 }
 
 .info {
@@ -87,7 +92,6 @@ main {
   align-items: center;
 }
 
-
 .picture > img {
   max-width: 90%;
   max-height: 90%;
@@ -100,12 +104,18 @@ main {
   display: grid;
   grid-template-rows: repeat(6, 1fr);
   grid-gap: 2rem;
+  padding: 2rem;
+  animation: popup 1s;
 }
 
 .meal {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
+  border: solid 1px #1d101b;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #361f32bb;
 }
 
 .meal-picture {
@@ -122,4 +132,15 @@ main {
   text-align: center;
   align-self: center;
   font-size: 1.4rem;
+}
+
+
+@keyframes popup {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
