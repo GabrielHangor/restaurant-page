@@ -1,3 +1,4 @@
+
 function renderHomepage() {
   // create nav el
   const mainContainer = document.querySelector("#content");
@@ -21,7 +22,7 @@ function renderHomepage() {
   const info = defineElement("div", "info", infoText);
   const info1 = defineElement("div", "info1", infoText1);
   const picture = defineElement("div", "picture");
-  const img = defineElement("img", null, null, "burger.svg");
+  const img = defineElement("img", null, null, './img/burger.svg');
 
   picture.appendChild(img);
   main.append(info, info1, picture);

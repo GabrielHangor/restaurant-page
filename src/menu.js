@@ -14,12 +14,12 @@ function renderMenu() {
   // create menu el
   const menuContainer = defineElement("div", "menu");
   const mealPicturesArray = [
-    "./meals/001-hot-dog.svg",
-    "./meals/002-hot-dog-1.svg",
-    "./meals/003-pizza.svg",
-    "./meals/004-fast-food.svg",
-    "./meals/005-hamburger.svg",
-    "./meals/006-burger.svg",
+    "./img/001-hot-dog.svg",
+    "./img/002-hot-dog-1.svg",
+    "./img/003-pizza.svg",
+    "./img/004-fast-food.svg",
+    "./img/005-hamburger.svg",
+    "./img/006-burger.svg",
   ];
 
   mealPicturesArray.forEach((picture) => {
