@@ -97,6 +97,9 @@ main {
 .menu {
   width: 70%;
   align-self: center;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 2rem;
 }
 
 .meal {
@@ -112,8 +115,7 @@ main {
 }
 
 .meal-picture > img {
-  max-width: 90%;
-  max-height: 90%;
+  width: 40%;
 }
 
 .description {
