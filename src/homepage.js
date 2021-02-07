@@ -3,9 +3,9 @@ function renderHomepage() {
   const mainContainer = document.querySelector("#content");
   const nav = defineElement("nav");
   const links = defineElement("div", "links");
-  const about = defineElement("p", null, "About");
-  const menu = defineElement("p", null, "Menu");
-  const contact = defineElement("p", null, "Contact");
+  const about = defineElement("p", 'aboutBtn', "About");
+  const menu = defineElement("p", 'menuBtn', "Menu");
+  const contact = defineElement("p", 'contactBtn', "Contact");
   about.classList.toggle('toggled');
 
   links.append(about, menu, contact);
