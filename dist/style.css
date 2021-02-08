@@ -115,7 +115,7 @@ main {
   border: solid 1px #1d101b;
   border-radius: 20px;
   padding: 10px;
-  background-color: #361f32bb;
+  background-color: #4b2b46bb;
 }
 
 .meal-picture {
@@ -152,7 +152,6 @@ main {
   align-self: center;
 }
 
-
 @keyframes popup {
   from {
     opacity: 0;
@@ -161,4 +160,74 @@ main {
   to {
     opacity: 1;
   }
+}
+
+@media screen and (max-width: 600px) {
+  /* nav */
+  .links {
+    width: 100%;
+  }
+
+  .links > p {
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+  /* homepage */
+  main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    width: 99%;
+    margin-top: 1rem;
+  }
+
+  .info {
+    width: 99%;
+    letter-spacing: 0;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+
+  .info1 {
+    font-size: 1rem;
+    margin: 1rem;
+  }
+
+  /* menu */
+  .menu {
+    width: 95%;
+  }
+
+  .meal {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+  }
+
+  .meal-picture > img {
+    width: 60%;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+
+  .contact {
+    padding: 1rem;
+    width: 95%;
+  }
+
+  .map {
+    max-width: 100%;
+  }
+
+  .map > iframe {
+    max-width: 100%;
+  }
+
+  .contact-info {
+    font-size: 1.2rem;
+
+  }
+  
 }
